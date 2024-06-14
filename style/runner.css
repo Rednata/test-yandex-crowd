@@ -9,12 +9,14 @@
   background-color: var(--accent);
   padding-top: 16px;
   padding-bottom: 16px;
+
 }
 
 .runner__list {
   display: flex;
   gap: 12px;
-  
+
+  animation: scroll 10s infinite linear ;
 }
 
 .runner__item {  
@@ -31,6 +33,15 @@
   height: 6px;
   border-radius: 50%;
   background-color: var(--bgColor);
+}
+
+@keyframes scroll {
+  from {
+      transform: translateX(100%);
+  }  
+  to {
+      transform: translateX(-300%)
+  }
 }
 
 /*  =================================== */

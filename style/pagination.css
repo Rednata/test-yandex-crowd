@@ -13,6 +13,7 @@
   height: 36px;
   border-radius: 50%;
   border: none;
+  background-color: var(--main);
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -24,14 +25,6 @@
 .pagination__btn:disabled {
   background-color: #d6d6d6;  
   cursor: auto;
-}
-
-.pagination__btn_left {
-  background-color: rgba(49, 49, 49, 0.2);
-}
-
-.pagination__btn_right {
-  background-color: var(--main);
 }
 
 .pagination__switches {

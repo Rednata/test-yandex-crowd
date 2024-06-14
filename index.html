@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="./assets/images/horse_icon.svg" type="image/x-icon">
   <title>Шахматный клуб четырех коней</title>
+  <script src="./index.js" type="module"></script>
 </head>
 
 <body>
@@ -123,7 +124,7 @@
         </h2>
         <div class="stages__box">
           <ul class="stages__list">
-            <li class="stages__item-inner stages__item-inner_1-2" role="none">
+            <li class="stages__item-inner stages__item-inner_1-2 item" role="none">
               <div class="stages__item stages__item_1" role="listitem">
                 <span class="stages__item-count"></span>
                 Строительство железнодорожной магистрали Москва-Васюки
@@ -134,12 +135,12 @@
               </div>              
             </li>          
 
-            <li class="stages__item stages__item_3">
+            <li class="stages__item stages__item_3 item">
               <span class="stages__item-count"></span>
               Поднятие сельского хозяйства в&nbsp;радиусе на&nbsp;тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
             </li>
 
-            <li class="stages__item-inner stages__item-inner_4-5" role="none">
+            <li class="stages__item-inner stages__item-inner_4-5 item" role="none">
               <div class="stages__item stages__item_4" role="listitem">
                 <span class="stages__item-count"></span>
                 Строительство дворца для&nbsp;турнира
@@ -150,12 +151,12 @@
               </div>              
             </li>     
 
-            <li class="stages__item stages__item_6">
+            <li class="stages__item stages__item_6 item">
               <span class="stages__item-count"></span>
               Постройка сверхмощной радиостанции для&nbsp;передачи всему миру сенсационных результатов
             </li>
 
-            <li class="stages__item stages__item_7">
+            <li class="stages__item stages__item_7 item">
               <span class="stages__item-count"></span>
               <div class="stages__item-width">
                 Создание аэропорта «Большие Васюки» с&nbsp;регулярным отправлением почтовых самолётов и&nbsp;дирижаблей во&nbsp;все&nbsp;концы света, включая Лос-Анжелос и&nbsp;Мельбурн
@@ -176,11 +177,11 @@
             </svg>              
           </button>
           <ul class="pagination__switches">
-            <li class="pagination__switch pagination__switch_active"></li>
-            <li class="pagination__switch"></li>
-            <li class="pagination__switch"></li>
-            <li class="pagination__switch"></li>
-            <li class="pagination__switch"></li>
+            <li class="pagination__switch pagination__switch_active" data-num="0"></li>
+            <li class="pagination__switch" data-num="1"></li>
+            <li class="pagination__switch" data-num="2"></li>
+            <li class="pagination__switch" data-num="3"></li>
+            <li class="pagination__switch" data-num="4"></li>
           </ul>
           <button class="pagination__btn pagination__btn_right">
             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,0 +1,244 @@
+.announcement {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.announcement__container {
+  padding-left: 40px;
+}
+
+.announcement__lecture {
+  /* display: flex; */
+  position: relative;
+  margin-bottom: 36px;  
+  padding-top: 27px;
+  padding-bottom: 31px;
+  /* border: 1px solid red; */
+}
+
+.announcement__lecture-title,
+.announcement__play-title {
+  font-family: Merriweather;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.35;
+  text-transform: uppercase;  
+}
+
+.announcement__lecture-title1-wrap {
+  max-width: 60%;
+}
+
+.announcement__lecture-title_1,
+.announcement__lecture-title_2 {
+
+}
+
+.announcement__lecture-title_1 {
+
+}
+
+.announcement__lecture-title_2 {
+  display: flex;
+  width: max-content;
+}
+.temp {
+  padding-right: 10px;
+}
+
+.temp1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.announcement__lecture-title_3 {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.announcement__lecture-title_4 {
+
+}
+
+.announcement__lecture-img {
+
+  clip-path: ellipse();
+  width: 394px;
+  height: 250px;
+  
+}
+
+/* =========== announcement__play ===============*/
+
+.announcement__play {
+  display: grid;
+  gap: 45px 18px;  
+  
+  grid-template-areas: 
+    'img title'
+    'img table';
+}
+
+.announcement__play-img {  
+  width: 532px;
+  grid-area: img;  
+  background:     
+    url('../assets/images/play_1.png'), 
+    url('../assets/images/play_0.png'), 
+    var(--bgColor);
+  background-blend-mode: 
+     color-burn,
+     normal;    
+  background-repeat: no-repeat;  
+  background-size: contain;
+  background-position: left 5px center;
+}
+
+.announcement__play-title {
+  grid-area: title;
+  padding-top: 25px;  
+}
+
+.announcement__play-title span{
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.announcement__play-info {  
+  grid-area: table;
+  /* margin-bottom: 35px;   */
+}
+
+.announcement__play-list {   
+  margin-bottom: 32px;    
+}
+
+.announcement__play-contact {
+  font-size: 20px;
+  color: var(--secondColor);
+  padding-bottom: 10px;
+}
+
+/* ================================================ */
+@media (max-width: 1280px) {
+  .announcement {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  .announcement__lecture {        
+    padding-bottom: 0;        
+  }  
+
+  .announcement__lecture-title1-wrap {    
+    max-width: none;
+    /* max-width: 80%; */
+    margin: 0 auto;    
+  }  
+  .announcement__lecture-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .announcement__lecture-title_2 {
+    display: block;
+    width: auto;
+  }
+  /* .temp {
+    padding-right: 10px;
+  } */
+  .announcement__lecture-title,
+  .announcement__play-title {    
+    font-size: clamp(28px, calc(28px + (8 * ((100vw - 480px) / 1440))), 36px);
+  }
+  .temp {
+    margin-bottom: 24px;
+  }
+  .temp1 {
+    position: static;    
+    margin-bottom: 14px;
+  }
+
+  .announcement__play {   
+    /* gap: 45px 18px;   */    
+    grid-template-areas: 
+      'img'
+      'title'            
+      'table';    
+    justify-items: center;
+  }
+
+  .announcement__play-title {
+   text-align: center;
+  }
+
+  .announcement__play-img {
+   width: 335px;
+   height: 402px;
+  }
+  .announcement__play-contact {   
+    padding-bottom: 0;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .announcement {
+    padding-top: 0;
+  }
+
+  .announcement__container {
+    padding-left: 19px;
+  }
+
+  .announcement__lecture {        
+    margin-bottom: 36px;        
+  }  
+
+  .announcement__lecture-title1-wrap {        
+    margin: 0;    
+    /* max-width: none; */
+  }  
+
+  .announcement__lecture-title {
+    text-align: left;
+  }
+
+  .announcement__lecture-title_2 {
+    
+  }
+
+  .announcement__lecture-img {
+    /* clip-path: ellipse(); */
+    width: 335px;
+    height: 212px;    
+  }
+
+  .announcement__play {   
+    gap: 2px;   
+    justify-items: left;
+  }
+
+  .announcement__play-list {
+    margin-bottom: 24px;
+  }
+  .announcement__play-title {
+   text-align: left;
+   margin-bottom: 44px;
+   padding-top: 22px;
+  }
+
+  .announcement__play-img {         
+    position: relative;
+    width: 100vw;    
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;    
+    background-position: bottom center; 
+  }
+
+  .announcement__play-contact {
+    font-size: 18px;
+    
+  }
+}

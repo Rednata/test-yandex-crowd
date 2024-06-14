@@ -1,0 +1,14 @@
+@import './style/normalize.css';
+@import './style/global.css';
+@import './style/font.css';
+@import './style/var.css';
+@import './style/header.css';
+@import './style/hero.css';
+@import './style/runner.css';
+@import './style/announcement.css';
+@import './style/list.css';
+@import './style/stages.css';
+@import './style/pagination.css';
+@import './style/members.css';
+@import './style/card.css';
+@import './style/footer.css';

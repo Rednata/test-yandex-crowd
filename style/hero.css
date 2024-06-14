@@ -87,12 +87,33 @@
   background-color: transparent;
   color: var(--main);
   border: 2px solid var(--btnColor);
+  transition: 
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.hero__btn:hover {
+  background-color: var(--main);
+  color: var(--bgColor);  
+  transition: 
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
 }
 
 .hero__btn_color {
   color: var(--bgColor);
   background-color: var(--btnColor);
 }
+
+.hero__btn_color:hover {
+  background-color: var(--btnColorHover);
+  color: var(--main);
+  border-color: transparent;
+}
+
+
 
 /*  =================================== */
 /*  =============  MEDIA ============== */

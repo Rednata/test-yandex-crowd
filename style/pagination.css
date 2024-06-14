@@ -13,6 +13,17 @@
   height: 36px;
   border-radius: 50%;
   border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pagination__btn:hover {
+  background-color: var(--btnColorHover);  
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pagination__btn:disabled {
+  background-color: #d6d6d6;  
+  cursor: auto;
 }
 
 .pagination__btn_left {

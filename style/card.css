@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  /* border: 1px solid red; */
   flex-shrink: 0;
   max-width: 394px; 
   width: calc((100vw - 2 * 72px - 2 * 20px) / 3);
@@ -11,8 +9,8 @@
 
 .card__img {
   border-radius: 50%;
-  /* width: 320px;
-  height: 320px;   */
+  width: 320px;
+  height: 320px;  
   margin: 0 auto;
 }
 
@@ -49,6 +47,9 @@
   font-size: 16px;
   margin: 0 auto;
 }
+
+/*  =================================== */
+/*  =============  MEDIA ============== */
 
 @media (max-width: 1280px) {
   .card {   

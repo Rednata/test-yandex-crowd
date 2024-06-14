@@ -32,7 +32,6 @@
 
 .stages__box {
   overflow-x: hidden;
-  /* border: 1px solid red; */
 }
 
 .stages__list {
@@ -66,12 +65,6 @@
   width: 50%;
 }
 
-/* .stages__item-count {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #fff;  
-} */
 .stages__item-count:before {
   display: flex;
   align-items: center;
@@ -93,7 +86,6 @@
   grid-row: 2 / 3;
 }
 
-
 .stages__item_3 {
   grid-column: 3 / 3;
   grid-row: 1 / 3;
@@ -104,7 +96,7 @@
   grid-row: 3 / 4;
 }
 
-.stages__item_7-box {
+.stages__item-width {
   width: 55%;
 
 }
@@ -113,19 +105,18 @@
   position: absolute;
   bottom: 0;
   right: 15px;  
-  /* border: 1px solid red; */
 }
 
-/*  ===============  MEDIA  ====================   */
+/*  =================================== */
+/*  =============  MEDIA ============== */
+
 @media (max-width: 1280px) {
   .stages {
     padding-top: 60px;
-    /* padding-bottom: 60px; */
   }
   .stages__title {
     max-width: none;
-    font-size: clamp(36px, calc(36px + (18 * ((100vw - 480px) / 1440))), 54px);
-    
+    font-size: clamp(36px, calc(36px + (18 * ((100vw - 480px) / 1440))), 54px);    
   }
 
   .stages__list {
@@ -172,10 +163,10 @@
   .stages__subtitle {
     display: block;    
     text-transform: none;    
-    /* max-width: none; */
     transform: translateY(0);   
     margin-bottom: 128px; 
   }
+
   .stages__list {
     display: flex;
     gap: 20px;
@@ -190,7 +181,6 @@
   }
 
   .stages__item {    
-    /* border: 1px solid blue; */
     flex-shrink: 0;
     width: calc(100vw - 80px);
     padding-right: 20px;
@@ -209,13 +199,11 @@
     flex-grow: 1;
     padding-top: 14px;
   }
-  .stages__item_5 {
   
-  }
-
-  .stages__item_7-box {
+  .stages__item-width {
     width: 100%;
   }
+
   .stages__img {  
     top: 100px;  
     right: 0;    
@@ -223,23 +211,17 @@
 }
 
 @media (max-width: 480px) {
-
-  .stages__title {
-    /* margin-bottom: 148px; */
-  }
   .stages__subtitle {   
     max-width: none;    
-  }
-  .stages__list {
   }
 
   .stages__item-inner div {
     width: calc(100vw - 38px);
   }
+
   .stages__item {
     font-size: 18px;
-    width: calc(100vw - 38px);
-    
+    width: calc(100vw - 38px);  
   }  
 
   .stages__item_1,
@@ -247,14 +229,12 @@
   .stages__item_4,
   .stages__item_6,
   .stages__item_7 {
-    padding-top: 62px;
-   
+    padding-top: 62px;   
   }
 
   .stages__img {    
     top: 198px;
     right: 20px;
-  }
-  
+  }  
 }
 

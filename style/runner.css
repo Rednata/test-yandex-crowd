@@ -1,6 +1,5 @@
 .runner {
   position: relative;
-  /* left: 0; */
   overflow-x: hidden;
   font-family: Merriweather;
   font-weight: 400;
@@ -25,9 +24,7 @@
   white-space: nowrap;
 }
 
-.runner__item:before {
-  /* position: absolute; */
-  
+.runner__item:before {    
   content: '';
   display: block;
   width: 6px;
@@ -35,6 +32,9 @@
   border-radius: 50%;
   background-color: var(--bgColor);
 }
+
+/*  =================================== */
+/*  =============  MEDIA ============== */
 
 @media (max-width: 860px) {
   .runner {

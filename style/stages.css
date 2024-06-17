@@ -4,7 +4,7 @@
 }
 
 .stages__container {
-  position: relative;
+  /* position: relative; */
 }
 
 .stages__title {  
@@ -103,10 +103,15 @@
 
 }
 
-.stages__img {
+.stages__img {  
   position: absolute;
-  bottom: 0;
-  right: 15px;  
+  bottom: 31.3%;
+  right: 10px;  
+  transition: 
+    transform 1s ease-in-out,
+    left 1s ease-in-out,
+    top 1s ease-in-out,
+    opacity 0.3s ease-in-out
 }
 
 /*  =================================== */
@@ -148,7 +153,8 @@
   }
 
   .stages__img {    
-    bottom: -20px;
+    bottom: 23%;
+    /* bottom: -20px; */
   }
 }
 
@@ -208,8 +214,10 @@
   }
 
   .stages__img {  
-    top: 100px;  
-    right: 0;    
+    bottom: 30.35%;
+    right: 25%;
+    /* top: 100px;  
+    right: 0;     */
   }
 }
 
@@ -236,8 +244,10 @@
   }
 
   .stages__img {    
-    top: 198px;
-    right: 20px;
+    /* top: 198px;
+    right: 20px; */
+
+    right: 18px;
   }  
 }
 

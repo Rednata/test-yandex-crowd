@@ -18,6 +18,7 @@ body {
     font-size: 16px;
     color: var(--main);
     background-color: var(--bgColor);
+    /* border: 1px solid red; */
 }
 
 img, svg {

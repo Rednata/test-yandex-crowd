@@ -26,32 +26,4 @@ export const membersSliderControl = () => {
   console.log(' coefficient: ', count);
 
   memberCountCurrentElem.textContent = count;
-  let num = 0;
-
-
-  setTimeout(() => {
-    if (num >= 5) {
-      console.log('=============');
-      num = 0;
-    }
-    membersItems[num].style.transform = `translateX(-${(num) * 100}%)`;
-    num++;
-  //   console.log('num: ', num);
-  //   const widthMembersBox = document.querySelector('.members__box').offsetWidth;
-
-  //   const width = calculateWidth();
-
-  //   const count = getCountCurrentMembers(width);
-
-  //   const index = countMembers / count;
-  //   membersItems.forEach((elem, i) =>
-  //     elem.style.transform =
-  //     `translateX(-${num * widthMembersBox}px)`);
-  //   // membersItems[num].style.transform = `translateX(-${(num + 1) * width}px)`;
-  //   // membersItems[num + 1].style.transform = `translateX(-${(num + 1) * width}px)`;
-  //   // console.log(membersItems[num]);
-
-
-  //   num += 1;
-  }, 5000);
 };

@@ -54,14 +54,12 @@
   max-width: 1222px;
   width: calc(100vw - 2 * 72px);
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .members__list {
   display: flex;
   gap: 20px;
   transition: transform 0.4s ease-in-out;
-  border: 1px solid green;
 }
 
 .members__item {
